@@ -13,4 +13,14 @@
   .square:hover {
     background-color: lightgray;
   }
+  .board-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0
+  }
+  
+  .board-row > .square {
+    margin: 5px;
+  }
+  
   
