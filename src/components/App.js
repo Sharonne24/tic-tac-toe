@@ -1,24 +1,31 @@
 import React from 'react';
 import "./Style.css";
+import { useState } from 'react';
+import Board from './Board';
 
-export default function Board() {
+// export default function App() {
+//   const [squares, setSquares] = useState(Array(9).fill(null));
+
+//   const handleClick = (index) => {
+//     const newSquares = [...squares];
+//     newSquares[index] = 'X';
+//     setSquares(newSquares);
+//   };
+
+//   return (
+//     <div>
+//       <Board squares={squares} onClick={handleClick} />
+//     </div>
+//   );
+// }
+
+
+export default function App() {
+  const [squares, setSquares] = useState(Array(9).fill(null));
+
   return (
-    <>
-    <div className="board-row">
-      <button className="square">1</button>
-      <button className="square">2</button>
-      <button className="square">3</button>
+    <div>
+      <Board squares={squares} />
     </div>
-    <div className="board-row">
-      <button className="square">4</button>
-      <button className="square">5</button>
-      <button className="square">6</button>
-    </div>
-    <div className="board-row">
-      <button className="square">7</button>
-      <button className="square">8</button>
-      <button className="square">9</button>
-    </div>
-  </>
   );
 }

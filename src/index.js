@@ -1,12 +1,15 @@
-import Square from './components/App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './components/Style.css';
+import App from './components/App';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Square />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+
+
